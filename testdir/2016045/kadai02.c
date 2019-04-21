@@ -7,7 +7,7 @@ int main(){
     printf("体重(kg)を入力してください ==> " );
     scanf("%lf", &weight);
     printf("身長(cm)を入力してください ==> ");
-    scanf("%lf", &length);
+    scanf("%lf", &length);aaa
 
 
     printf("BMI = %.1f \n", weight/((length/100)*(length/100)) );

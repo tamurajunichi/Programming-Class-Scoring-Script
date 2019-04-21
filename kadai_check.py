@@ -40,10 +40,9 @@ def search(pattern):
 def can_compile(commands):
     try:
         out = subprocess.run(commands, stdout=subprocess.PIPE ,stderr=subprocess.PIPE, shell=True)
+        out.check_returncode()
         print(out.stdout.decode())
         print(out.stderr.decode())
-        print(out.args)
-        print(out.returncode)
         return True
     except subprocess.CalledProcessError as exc:
         print("return code:\"{}\"\noutput:\"{}\"".format(exc.returncode, exc.output,))
