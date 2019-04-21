@@ -8,7 +8,7 @@ class Command():
     def proc(self):
         with subprocess.Popen(self.arg, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True) as proc:
             message = proc.stdout.read()
-            print(message.decode("cp932"))
+            print(message.decode("utf-8"))
 
 
 gccv = Command("gcc -v")
