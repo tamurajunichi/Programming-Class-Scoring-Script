@@ -26,4 +26,4 @@ def IsCompile(commands):
         print("return code:\"{}\"\noutput:\"{}\"".format(exc.returncode, exc.output,))
         return False
 
-IsCompile("gcc test.c")
+print(IsCompile("gcc test.c"))
