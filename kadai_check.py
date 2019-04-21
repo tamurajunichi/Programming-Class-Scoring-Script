@@ -1,5 +1,6 @@
 import os
 import subprocess
+
 '''
 class Command():
     def __init__(self, command):
@@ -15,6 +16,7 @@ class Command():
             else:
                 print("this program doesnt support your os \"%s\". \n good bye.", os.name)
                 exit()
+                print(message.decode("utf-8"))
 '''
 
 def IsCompile(commands):
