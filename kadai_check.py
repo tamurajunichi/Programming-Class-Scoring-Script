@@ -20,11 +20,10 @@ class Command():
 '''
 
 
-
-
 csv_name = "out.csv"
 cmd = "gcc"
-target_file ="kadai02.c"
+target_file = "kadai02.c"
+
 
 def search(pattern):
     full_list = []
@@ -41,8 +40,6 @@ def can_compile(commands):
     try:
         out = subprocess.run(commands, stdout=subprocess.PIPE ,stderr=subprocess.PIPE, shell=True)
         out.check_returncode()
-        print(out.stdout.decode())
-        print(out.stderr.decode())
         return True
     except subprocess.CalledProcessError as exc:
         print("return code:\"{}\"\noutput:\"{}\"".format(exc.returncode, exc.output,))
@@ -62,14 +59,14 @@ def write_csv(name, out_list):
         writer = csv.writer(f)
         writer.writerow(out_list)
 
+
 csv_path = "./" + csv_name
+
 
 search_lists = search(target_file)
 for child_list in search_lists:
-    for child in child_list:
-        print(child)
 
-    cmd_list = [cmd, child_list[0]]
+    cmd_list = cmd + " " + child_list[0]
     result_compile = can_compile(commands=cmd_list)
 
     if not os.path.isfile(csv_path):
