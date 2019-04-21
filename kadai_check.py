@@ -24,20 +24,18 @@ class Command():
 
 csv_name = "out.csv"
 cmd = "gcc"
+target_file ="kadai02.c"
 
+def search(pattern):
+    full_list = []
 
-def search_files(pattern):
-    search_list = []
-    for pathname, dir_names, file_names in os.walk(os.getcwd()):
-        for file_name in file_names:
-            index = re.search(pattern, file_name)
+    for path, dirs, files in os.walk(os.getcwd()):
+        for file in files:
+            index = re.search(pattern, file)
             if index:
-                search_list.append(file_name)
-        for dir_name in dir_names:
-            index = re.search(pattern, dir_name)
-            if index:
-                search_list.append(dir_name)
-    return search_list
+                append_list = [os.path.join(path, file),path,file]
+                full_list.append(append_list)
+    return full_list
 
 
 def can_compile(commands):
@@ -65,14 +63,17 @@ def write_csv(name, out_list):
 
 csv_path = "./" + csv_name
 
-search_names = search_files("2016*")
-for search_name in search_names:
-    cmd_list = [cmd, search_name]
+search_lists = search(target_file)
+for child_list in search_lists:
+    for child in child_list:
+        print(child)
+
+    cmd_list = [cmd, child_list[0]]
     result_compile = can_compile(commands=cmd_list)
 
     if not os.path.isfile(csv_path):
         create_csv(name=csv_name)
 
-    out_list = [result_compile, search_name]
+    out_list = [result_compile, child_list[1]]
     write_csv(name=csv_name, out_list=out_list)
 
