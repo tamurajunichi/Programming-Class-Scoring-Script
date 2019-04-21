@@ -28,7 +28,6 @@ target_file ="kadai02.c"
 
 def search(pattern):
     full_list = []
-
     for path, dirs, files in os.walk(os.getcwd()):
         for file in files:
             index = re.search(pattern, file)
@@ -40,8 +39,11 @@ def search(pattern):
 
 def can_compile(commands):
     try:
-        out = subprocess.check_output(commands, stderr=subprocess.STDOUT, shell=True)
-        print(out)
+        out = subprocess.run(commands, stdout=subprocess.PIPE ,stderr=subprocess.PIPE, shell=True)
+        print(out.stdout.decode())
+        print(out.stderr.decode())
+        print(out.args)
+        print(out.returncode)
         return True
     except subprocess.CalledProcessError as exc:
         print("return code:\"{}\"\noutput:\"{}\"".format(exc.returncode, exc.output,))
