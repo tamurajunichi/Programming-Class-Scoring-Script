@@ -18,7 +18,9 @@ class Command():
                 exit()
                 print(message.decode("utf-8"))
 '''
-
+'''
+履修生各々の管理できるようにクラスを作ったほうがいいかも
+'''
 
 csv_name = "out.csv"
 cmd = "gcc"
@@ -31,18 +33,19 @@ def search(pattern):
         for file in files:
             index = re.search(pattern, file)
             if index:
-                append_list = [os.path.join(path, file),path,file]
-                full_list.append(append_list)
+                full_list.append([os.path.join(path, file), path, file])
     return full_list
 
 
 def can_compile(commands):
+    print(commands)
     try:
         out = subprocess.run(commands, stdout=subprocess.PIPE ,stderr=subprocess.PIPE, shell=True)
+        print(out.stdout.decode())
         out.check_returncode()
         return True
     except subprocess.CalledProcessError as exc:
-        print("return code:\"{}\"\noutput:\"{}\"".format(exc.returncode, exc.output,))
+        print("return code:\"{}\"\noutput:\"{}\"".format(exc.returncode, exc.stderr.decode(),))
         return False
 
 
@@ -61,17 +64,16 @@ def write_csv(name, out_list):
 
 
 csv_path = "./" + csv_name
-
-
 search_lists = search(target_file)
-for child_list in search_lists:
 
-    cmd_list = cmd + " " + child_list[0]
+for path_info in search_lists:
+
+    cmd_list = cmd + " " + path_info[0]
     result_compile = can_compile(commands=cmd_list)
 
     if not os.path.isfile(csv_path):
         create_csv(name=csv_name)
 
-    out_list = [result_compile, child_list[1]]
+    out_list = [result_compile, path_info[1]]
     write_csv(name=csv_name, out_list=out_list)
 
