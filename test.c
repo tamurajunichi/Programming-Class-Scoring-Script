@@ -2,16 +2,14 @@
 
 int main()
 {
-	int x;
-	print
-	scanf("%d",&x);
-	printf("test1:%d",x);
-	scanf("%d",&x);
-	printf("test2:%d",x);
-	scanf("%d",&x);
-	printf("test3:%d",x);
-	return 0;
+    double x,y;
+
+    printf("xを入力:");
+    scanf("%lf",&x);
+    printf("yを入力:");
+    scanf("%lf",&y);
+
+    printf("\n\nx=%f\by=%f",x,y);
+
+
 }
-
-
-
