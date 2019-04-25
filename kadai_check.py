@@ -48,7 +48,7 @@ def extract_out(out, a=0):
     if a == 0:  # \nの手前に単位がついていた場合の数値
         return re.findall(r"[^亜-熙ぁ-んァ-ヶ\.\d-]+(-?\d+\.?\d*)[\n\t\s点%％]+", out, re.M)
     else:  # \nで終わってる数値
-        return re.findall(r"(-?\d+\.?\d*)[\n]*$", out)
+        return re.findall(r"(-?\d+\.?\d*)\s*$", out, re.MULTILINE)
 
 
 
@@ -57,7 +57,26 @@ def fomula():
     標準入出力で使用される値と個数、桁数を入力させる関数
     :return:
     """
-    exec(str(input("評価式を入力。(例：I.append[10]; I.append[10.0]; O.append[I[0]+I[1]]):")))
+    global I,O
+    input_num = int(input("入力個数："))
+    output_num = int(input("出力個数："))
+
+    for i in range(input_num):
+        I.append(input(str(i+1)+"番目の入力値:"))
+        if isfloat(I[i]) is True:
+            I[i] = float(I[i])
+        else:
+            I[i] = int(I[i])
+
+
+    for i in range(output_num):
+        O.append(input(str(i+1)+"番目の出力値:"))
+        if isfloat(O[i]) is True:
+            O[i] = float(O[i])
+        else:
+            O[i] = int(O[i])
+
+    # exec(str(input("評価式を入力。(例：I.append[10]; I.append[10.0]; O.append[I[0]+I[1]]):")))
     # exec("I.append(55.8);I.append(168.3);O.append(19.7);O.append(62.3);O.append(-10.5)")
     # exec("I.append(123.456789);I.append(987.654321);O.append(1111.111110);O.append(-864.197532);O.append(121932.631113);O.append(0.125000)")
     for i in I:
@@ -136,7 +155,7 @@ def eval(stdio_list):
     print("\n")
 
     if eval_number(out, O) is True:
-        print("出力個数\t\t〇")
+        print("出力個数\t〇")
         if eval_type(out, O) is True:
             print("出力値の型\t〇")
             for i, num in enumerate(out):
@@ -153,7 +172,7 @@ def eval(stdio_list):
 
     elif eval_number(extract_out(stdio_list[0], a=1), O) is True:
         out = extract_out(stdio_list[0], a=1)
-        print("出力個数\t\t〇")
+        print("出力個数\t〇")
         if eval_type(out, O) is True:
             print("出力値の型\t〇")
             for i, num in enumerate(out):
@@ -265,3 +284,4 @@ for path_info in search_lists:
     if result_compile is True:
         stdio_list = stdio(excute_path)
         eval(stdio_list)
+input("終了する場合はEnter")

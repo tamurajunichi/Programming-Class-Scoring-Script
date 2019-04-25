@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9c9ee59-1ad3-45cb-9aa6-749476a0f0af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_class.py" afterDir="false" />
+    <list default="true" id="c9c9ee59-1ad3-45cb-9aa6-749476a0f0af" name="Default Changelist" comment="add some function to execute an exe files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/a.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kadai_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/kadai_check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/test.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdir/201601/kadai02.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdir/201602/kadai02.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdir/2016045/kadai02.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_class.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +17,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kadai_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="153" column="23" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
+            <state relative-caret-position="133">
+              <caret line="157" column="19" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -61,15 +74,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/testdir/2016045/kadai02.c" />
-        <option value="$PROJECT_DIR$/test_class.py" />
         <option value="$PROJECT_DIR$/test.c" />
+        <option value="$PROJECT_DIR$/test_class.py" />
+        <option value="$PROJECT_DIR$/out_test.py" />
         <option value="$PROJECT_DIR$/kadai_check.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="81" />
-    <option name="y" value="85" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="253" />
+    <option name="y" value="43" />
     <option name="width" value="1400" />
     <option name="height" value="909" />
   </component>
@@ -84,17 +98,6 @@
             <path>
               <item name="Automatic-scoring-C" type="b2602c69:ProjectViewProjectNode" />
               <item name="Automatic-scoring-C" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automatic-scoring-C" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Automatic-scoring-C" type="462c0819:PsiDirectoryNode" />
-              <item name="kadai01_1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automatic-scoring-C" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Automatic-scoring-C" type="462c0819:PsiDirectoryNode" />
-              <item name="kadai01_1" type="462c0819:PsiDirectoryNode" />
-              <item name="201704003" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -112,7 +115,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -156,6 +159,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="out_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Automatic-scoring-C" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/out_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_class.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Automatic-scoring-C" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,9 +197,15 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.kadai_check" />
+      <item itemvalue="Python tests.pytest in test_class.py" />
+      <item itemvalue="Python.out_test" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.kadai_check" />
+        <item itemvalue="Python.out_test" />
         <item itemvalue="Python tests.pytest in test_class.py" />
       </list>
     </recent_temporary>
@@ -192,7 +223,7 @@
       <workItem from="1555773643913" duration="3030000" />
       <workItem from="1555827368687" duration="24578000" />
       <workItem from="1556026869232" duration="14096000" />
-      <workItem from="1556042337951" duration="43888000" />
+      <workItem from="1556042337951" duration="61439000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1555849884271</created>
@@ -236,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555858017129</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add some function to execute an exe files">
+      <created>1556162361833</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556162361833</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -249,9 +287,21 @@
     <history-entry file="pytest_in_test_class_py - 2019.04.23 at 23h 38m 18s.xml">
       <configuration name="pytest in test_class.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_class_py - 2019.04.25 at 22h 22m 39s.xml">
+      <configuration name="pytest in test_class.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_class_py - 2019.04.25 at 22h 25m 59s.xml">
+      <configuration name="pytest in test_class.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_class_py - 2019.04.25 at 22h 26m 18s.xml">
+      <configuration name="pytest in test_class.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_class_py - 2019.04.25 at 22h 29m 20s.xml">
+      <configuration name="pytest in test_class.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85592000" />
+    <option name="totallyTimeSpent" value="103143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -263,16 +313,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="253" y="43" width="1400" height="909" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18656716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26119402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32860824" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40836012" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39764202" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.89819586" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4780928" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32860824" />
@@ -280,7 +329,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32860824" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" x="467" y="518" width="845" height="521" id="Terminal" order="11" weight="0.33118558" />
+      <window_info active="true" anchor="bottom" x="467" y="518" width="845" height="521" id="Terminal" order="11" visible="true" weight="0.33118558" />
       <window_info anchor="bottom" x="529" y="230" width="1093" height="600" id="Python Console" order="12" weight="0.3943299" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -339,53 +388,69 @@
     <MESSAGE value="subprocessのcheck_out関数からrun関数に変更後、うまく例外処理に映らなかったため、checkreturncode関数追加" />
     <MESSAGE value="cygwin上でlist型でrun()の引数argsに渡しても正しく実行されないので、cmd_listを文字列にしてrun()に渡す。" />
     <MESSAGE value="リファクタリングを少しだけ" />
-    <option name="LAST_COMMIT_MESSAGE" value="リファクタリングを少しだけ" />
+    <MESSAGE value="add some function to execute an exe files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some function to execute an exe files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/kadai_check.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/kadai_check.py</url>
-          <line>170</line>
+          <line>189</line>
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/kadai_check.py</url>
-          <line>71</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/kadai_check.py</url>
-          <line>153</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/kadai_check.py</url>
-          <line>137</line>
-          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="O_decimal" language="Python" />
+        <watch expression="strings" language="Python" />
         <watch expression="out" language="Python" />
+        <watch expression="I" language="Python" />
+        <watch expression="O" language="Python" />
+        <watch expression="j" language="Python" />
+        <watch expression="num" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Automatic_scoring_C$pytest_in_test_class_py.coverage" NAME="pytest in test_class.py Coverage Results" MODIFIED="1556030297288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Automatic_scoring_C$kadai_check.coverage" NAME="kadai_check Coverage Results" MODIFIED="1556159214927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Automatic_scoring_C$pytest_in_test_class_py.coverage" NAME="pytest in test_class.py Coverage Results" MODIFIED="1556198890215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Automatic_scoring_C$out_test.coverage" NAME="out_test Coverage Results" MODIFIED="1556205665112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Automatic_scoring_C$kadai_check.coverage" NAME="kadai_check Coverage Results" MODIFIED="1556207316831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>num</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>j</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>O</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>I</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>out</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>strings</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stdio_list</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -396,6 +461,16 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>eval_number(extract_out(stdio_list[0],a=1),O) == True</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>eval_number(extract_out(stdio_list[0],a=1),O) == Trueb</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>stdio_list[0]</expression-string>
         <language-id>Python</language-id>
@@ -418,13 +493,6 @@
     <entry file="file://$PROJECT_DIR$/testdir/201602/kadai02.c" />
     <entry file="file://$PROJECT_DIR$/testdir/201601/kadai02.c" />
     <entry file="file://$PROJECT_DIR$/testdir/2016045/kadai02.c" />
-    <entry file="file://$PROJECT_DIR$/test_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kadai01_2/201803953/ex01.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-81" />
@@ -529,27 +597,10 @@
         <state relative-caret-position="-267" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kadai01_1/201704001/kadai01.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-54" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kadai01_1/201704003/kadai01.c">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/re.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -558,10 +609,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kadai01_1/201704003/kadai01.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kadai_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="153" column="23" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
+        <state relative-caret-position="133">
+          <caret line="157" column="19" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
